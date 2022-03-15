@@ -38,8 +38,7 @@ while(respuesta==="si")
 
     alumnos.push({
         nombre: prompt("nombre")    
-        })
-    
+        });
 }
 
 for(let  i=0;i<alumnos.length;i++){
