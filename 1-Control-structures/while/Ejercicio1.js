@@ -37,17 +37,31 @@ Con un ciclo while pregunten si quieren dar de alta un nuevo alumnos, si si, agr
 Si quieren dar el extra mille, entonces al salir del ciclo con un ciclo for, iteren sobre todos los elementos del arreglo e impriman nombre y aprellido concatenado con template string
 
 */
-let alumnos=[];
-let respuesta="si";
-let nombre="";
-let contador = 0;
+// let alumnos=[];
+// let respuesta="si";
 
-while(respuesta==="si")
-{   alumnos.push(prompt("nombre y apellido: "));    
+// while(respuesta==="si")
+// {   alumnos.push(prompt("nombre y apellido: "));    
     
-    respuesta =  prompt("Dar de alta a otro  alumno?");
+//     respuesta =  prompt("Dar de alta a otro  alumno?");
+// }
+
+// for(let  i=0;i<alumnos.length;i++){
+//     console.log(`Nombre del alumno: ${alumnos[i]}`);
+// }
+
+//OTRA FROMA DE SOLUCIONARO
+let alumnos = [];
+let agregarNuevoAlumno = "si";
+
+while (agregarNuevoAlumno === "si") {
+    alumnos.push({ //AQUI SE CREO UN OBJETO
+        nombre: prompt("Ingresa el nombre del alumno: "),
+        apellido: prompt("Ingresa el apellido del alumno: ")
+    }); 
+    agregarNuevoAlumno = prompt("Quieres añadir a un nuevo alumno?: ");
 }
 
-for(let  i=0;i<alumnos.length;i++){
-    console.log(`Nombre del alumno: ${alumnos[i]}`);
+for(i = 0; i < alumnos.length; i++) {
+    console.log(`El alumno ${i+1} es: ${alumnos[i].nombre} ${alumnos[i]["apellido"]}`);
 }
