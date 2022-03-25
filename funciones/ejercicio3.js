@@ -1,3 +1,5 @@
+// 16-03-22
+
 // 1. Crear una función que reciba un array de strings y números como este [4,"dos",8,"tres",5,9,1,"cero" y nos regrese un arreglo con sólo los elementos tipo number
 
 let words = [4,"dos",8,"tres",5,9,1,"cero"];

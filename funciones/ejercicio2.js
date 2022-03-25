@@ -1,3 +1,5 @@
+// 15-03-22 Rosa Hernández
+
 //numero positivo o negativp
 let num = -6;
 function positivoNegativo(num){

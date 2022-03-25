@@ -1,4 +1,6 @@
-// //crear una funcion que nos muestre en consola los días de la semana 
+// 15 de marzo de 2020 - Rosa Hernández 
+
+//crear una funcion que nos muestre en consola los días de la semana 
 
 // let dias = ["Lunes", "Martes", "Miécoles", "Jueves", "Viernes", "Sábado", "Domingo"];
 

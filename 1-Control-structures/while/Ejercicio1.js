@@ -7,7 +7,7 @@ let saludo="hola";
 
 while(saludo=="hola")
 {
-    prompt("Ingresa saludo");
+    saludo = prompt("Ingresa saludo");
 }
 
 console.log("Te voy a acusar")
