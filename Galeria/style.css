@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* para que las meidadas cuadren */
+}
+.contenedorGaleria{
+    width: 70%; /*este es el ancho correspondiente al documento*/
+    margin: 0 auto; /*con esto queda centrado*/
+    padding: 1rem;
+    background-color: rgb(103, 18, 18);
+    color: white;
+}
+.contenedorGaleria img{
+    width: 100%; /*Tamaño de la imagen dentro del contenedor*/
+    
+}
+
+.contenedorMiniaturas{
+    width: 100%;
+    display: block;
+    background-color: aquamarine;
+
+}
+.contenedorMiniaturas img{
+    width: 33.33%;
+    height: 10vh;
+    background-color: blueviolet;
+    transition: .3s; /*para provocar una trasnsicion suave de regreso*/
+
+}
+
+.contenedorMiniaturas img:hover{
+    transform: scale(1.1) ;
+    transition: .3s;
+}
