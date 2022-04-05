@@ -9,19 +9,72 @@ for(let i=1;i<=6;i++)
 {
     img_array.push("../img/pic"+i+".jpg");
 }
+//Implementación con los 3 segundos OFCIAL
 
-var image = document.getElementById("aaa");
-var index=1;
-const myInterval = setInterval("slide()", 500);
 
-function slide()
-{   document["aaa"].src = img_array[index];
-    index++;
-    if(index>=img_array.length)
-    {
-    // index=0;
-    clearInterval(myInterval);
-    }
+// const myInterval = setInterval("slide()", 1000);
+// let image = document.getElementById("aaa");
+// let index=1;
+
+// function slide()
+// {  
+//     image.src = img_array[index]; // es igual a document["aaa"].src = img_array[index];
+//     index++;
+//     if(index>=img_array.length)
+//     {
+//     // index=0;
+//         clearInterval(myInterval);
+//     }
+// }
+
+//Implementacion en funcion
+// const myInterval = setInterval("slide1()", 1000);
+// let image = document.getElementById("aaa");
+// let index=1;
+
+// function slide1()
+// {   for(let i=1;i<=img.array.length;i++)
+//     {
+//         image.src = img_array[i]; 
+
+//     }
+    
+    
+//     // if(index>=img_array.length)
+//     // {
+//     // // index=0;
+//     //     clearInterval(myInterval);
+//     // }
+// }
+
+
+//implementación con boton de incio 
+btn_sig.onclick = iniciarJuego();
+
+function iniciarJuego()
+{
+    btn_sig.addEventListener("click", (e)=>
+    {   let image = document.getElementById("aaa");
+        let index=1;
+        // alert("incia el juego");
+        const myInterval = setInterval(function slide(){
+
+
+            image.src = img_array[index]; // es igual a document["aaa"].src = img_array[index];
+            
+            index++;
+            if(index>=img_array.length)
+            {
+            // index=0;
+                clearInterval(myInterval);
+            }
+        }, 1000);
+      
+        
+        
+
+        
+    }); 
 }
 
 
