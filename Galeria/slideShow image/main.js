@@ -114,3 +114,57 @@ function iniciarJuego()
 
 
 
+//+++++++++Esta version muestra las imagenes aleatoprias pero se repiten 
+
+// let btn_sig = document.getElementById("btn-sig");
+
+// /* Array de imágenes */
+// let img_array = [];
+// for(let i=1;i<=54;i++)
+// {
+//     img_array.push("../main-page/images/baraja/"+i+".jpg");
+// }
+// //Se agrega evento onclick al boton 
+// btn_sig.onclick = iniciarJuego();
+// let index=0;
+// let min = 1;
+// let max =55;
+
+// function iniciarJuego()
+// {
+//     btn_sig.addEventListener("click", (e)=>
+//     {   let image = document.getElementById("aaa");
+        
+//         // alert("inicia el juego");
+//         const myInterval = setInterval(function slide(){
+//             index = Math.floor(Math.random() * (55 - 2)) + 2;
+              
+//               console.log(index);
+//             image.setAttribute("src", img_array[index] );
+//             // image.src = img_array[index]; // es igual a document["aaa"].src = img_array[index];
+            
+//             // index++; //este debe ser un nuemro random 
+//             if(index>=img_array.length)
+//             {
+//             // index=0;
+//                 clearInterval(myInterval);
+//             }
+//         }, 2000);       
+//     }); 
+// }
+
+//******************************************* */
+
+//Ejemplo de como se muestra el texto acumulatuivo con innerHTML
+// let array_num=[];
+// let j=0;
+
+// let texto = document.getElementById("escribir");
+
+// for(let i=2;i<=6;i++)
+// {
+//     array_num.push(i);
+//     // alert(array_num[j]);
+//     j++;
+//     texto.innerHTML +=`${i} +` ;
+// }
