@@ -48,7 +48,7 @@ for(let i=1;i<=6;i++)
 // }
 
 
-//implementación con boton de incio 
+//implementación con boton de incio en esta prueba de GALERIA
 btn_sig.onclick = iniciarJuego();
 
 function iniciarJuego()
@@ -69,10 +69,6 @@ function iniciarJuego()
                 clearInterval(myInterval);
             }
         }, 1000);
-      
-        
-        
-
         
     }); 
 }
@@ -168,3 +164,49 @@ function iniciarJuego()
 //     j++;
 //     texto.innerHTML +=`${i} +` ;
 // }
+
+/*En este apartado desordene el array  de imágenes*/
+
+// img_array=img_array.sort(function(){
+//     return Math.random() - 0.5 //por qué 0.5??????
+//     });
+//     alert(img_array); //para corroborar el orden del arreglo
+
+/*************este es el ultimo que tengo pero algo fallo*************** */
+
+
+// let btn_sig = document.getElementById("btn-sig");
+// let index=0; //contador de imágenes
+
+// /* Array de imágenes */
+
+// let img_array = [];
+//     for(let i=2;i<=10;i++)
+//     {
+//         img_array.push("../main-page/images/baraja/"+i+".jpg");
+//     }
+//     alert(img_array);
+
+//Se agrega evento onclick al boton 
+// btn_sig.onclick = iniciarJuego();
+
+// function iniciarJuego()
+// {   
+//     btn_sig.addEventListener("click", (e)=>
+//     {   let image = document.getElementById("aaa");
+        
+//         const myInterval = setInterval(function slide(){
+                       
+//             // image.setAttribute("src", img_array[index] );
+//             image.src = img_array[index];
+//             index++;
+
+//             if(index>=img_array.length)
+//             {  //cuando llegue al último elemnto se dentendra el intervalo
+//                 clearInterval(myInterval);
+//             }
+
+//         }, 1000);       
+//     }); 
+// }
+
