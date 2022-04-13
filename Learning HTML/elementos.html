@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d76a47ce20.js" crossorigin="anonymous"></script>
+    <title>Aprende HTML</title>
+</head>
+
+<body>
+    <!-- <audio src="music.mp3" autoplay controls> este es un elemento de audio no soportado por tu navegador, prueba con otro </audio> -->
+    <div class="container">
+        <header class="header">
+            <div class="nav-content">
+                <h1 class="main-title"> Aprende HTML</h1>
+                <div class="nav-search">
+                    <input type="text" id="input-search" name="search" placeholder="Buscar en página">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <nav class="nav-menu">
+                    <ul class="items-nav-menu">
+                        <a href="#">
+                            <li>Temas</li>
+                        </a>
+                        <a href="#">
+                            <li>Acerca de</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <article>
+                <h2 class="title-article"> Etiquetas HTML</h2>
+                <div id="audio-section">
+                    <h3 class="sub-title">Agregar audio a tu página HTML</h3>
+                    <audio controls>
+                        <!-- autoplay loop -->
+                        <source src="audio/music.mp3" type="audio/mp3">
+                        <source src="audio/music.ogg" type="audio/ogg">
+                        <source src="audio/music.wav" type="audio/wav">
+                        este es un elemento de audio no soportado por tu navegador, prueba con otro
+                    </audio>
+                    <p>Puedes añadir autoplay, para que se reproduzca al cargar la pagina y loop para que se reproduzca
+                        sin
+                        parar
+
+                    <figure>
+                        <figcaption>Sintaxis para añadir audio con algunos formatos</figcaption>
+                        <pre>
+                            <code>
+                                &lt;audio controls autoplay loop&gt;
+                                &lt;source src="audio/music.mp3" type="audio/mp3"&gt;
+                                &lt;source src="audio/music.ogg" type="audio/ogg"&gt;
+                                &lt;source src="audio/music.wav" type="audio/wav"&gt;
+                                este es un elemento de audio no soportado por tu navegador, prueba con otro
+                                &lt;/audio&gt;
+                            </code>
+                            </pre>
+                    </figure>
+                    </p>
+                </div>
+            </article>
+            <aside>
+                <h2>Relacionados</h2>
+            </aside>
+        </main>
+
+        <aside>
+            <h2>Otros post</h2>
+        </aside>
+        <footer>
+            Todos los derecho rservados Rosa Hdez &copy;
+        </footer>
+
+
+
+    </div>
+
+</body>
+
+</html>
